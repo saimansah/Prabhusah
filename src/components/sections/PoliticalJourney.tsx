@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
+import { AppImage as Image } from "@/components/ui/AppImage";
 import { motion } from "framer-motion";
 import { useLanguage } from "@/context/LanguageContext";
 import { timelineMilestones } from "@/data/timelineData";

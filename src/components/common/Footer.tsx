@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
+import { AppImage as Image } from "@/components/ui/AppImage";
 import { useLanguage } from "@/context/LanguageContext";
 import { socialLinks } from "@/data/socials";
 import {

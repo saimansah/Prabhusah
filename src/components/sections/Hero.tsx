@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import Image from "next/image";
+import { AppImage as Image } from "@/components/ui/AppImage";
 import { motion } from "framer-motion";
 import { useLanguage } from "@/context/LanguageContext";
 import { Button } from "@/components/ui/Button";

@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import Image from "next/image";
+import { AppImage as Image } from "@/components/ui/AppImage";
 import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
 import { LanguageSwitcher } from "./LanguageSwitcher";
