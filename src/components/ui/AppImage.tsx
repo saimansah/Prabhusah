@@ -17,13 +17,16 @@ export const AppImage: React.FC<ImageProps> = ({ src, alt, onError, ...props }) 
   const handleError = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
     if (!hasRetried && typeof src === "string") {
       setHasRetried(true);
-      // If failed without /Prabhusah, try with /Prabhusah
-      if (!imgSrc.toString().includes("/Prabhusah/")) {
+      const isSubpath =
+        typeof window !== "undefined" &&
+        window.location.pathname.startsWith("/Prabhusah");
+      // If on GitHub Pages subpath and path didn't include it, retry with subpath
+      if (isSubpath && !imgSrc.toString().includes("/Prabhusah/")) {
         setImgSrc(`/Prabhusah${src.startsWith("/") ? "" : "/"}${src}`);
         return;
       }
-      // If failed with /Prabhusah, try without /Prabhusah
-      if (imgSrc.toString().includes("/Prabhusah/")) {
+      // If not on subpath but path included it, strip it
+      if (!isSubpath && imgSrc.toString().includes("/Prabhusah/")) {
         setImgSrc(src.startsWith("/") ? src : `/${src}`);
         return;
       }
