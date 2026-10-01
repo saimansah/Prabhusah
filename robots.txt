@@ -1,0 +1,8 @@
+User-Agent: *
+Allow: /
+Disallow: /api/
+
+User-Agent: Googlebot
+Allow: /
+
+Sitemap: https://prabhu-sah.com.np/sitemap.xml
