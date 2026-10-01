@@ -182,7 +182,7 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [language, setLanguage] = useState<Language>("EN");
-  const [theme, setTheme] = useState<Theme>("dark");
+  const [theme, setTheme] = useState<Theme>("light");
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -193,15 +193,16 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     }
 
     const savedTheme = localStorage.getItem("prabhu_sah_theme") as Theme;
-    if (savedTheme === "light" || savedTheme === "dark") {
-      setTheme(savedTheme);
-      if (savedTheme === "dark") {
-        document.documentElement.classList.add("dark");
-      } else {
-        document.documentElement.classList.remove("dark");
-      }
-    } else {
+    if (savedTheme === "dark") {
+      setTheme("dark");
       document.documentElement.classList.add("dark");
+    } else if (savedTheme === "light") {
+      setTheme("light");
+      document.documentElement.classList.remove("dark");
+    } else {
+      // Default to light theme
+      setTheme("light");
+      document.documentElement.classList.remove("dark");
     }
   }, []);
 

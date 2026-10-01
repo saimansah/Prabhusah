@@ -87,7 +87,7 @@ export const NotFoundClient: React.FC = () => {
   ];
 
   return (
-    <div className="relative min-h-screen bg-slate-950 text-slate-100 flex flex-col selection:bg-amber-500/30 selection:text-amber-300">
+    <div className="relative min-h-screen bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 flex flex-col selection:bg-amber-500/30 selection:text-amber-300">
       {/* Background Ambience & Radial Glows */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[450px] bg-gradient-to-b from-saffron-500/15 via-rose-500/10 to-transparent blur-[120px]" />

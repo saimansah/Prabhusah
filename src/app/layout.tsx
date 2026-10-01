@@ -101,11 +101,24 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`dark ${jakarta.variable} ${outfit.variable}`}>
+    <html lang="en" className={`${jakarta.variable} ${outfit.variable}`} suppressHydrationWarning>
       <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              try {
+                if (localStorage.getItem('prabhu_sah_theme') === 'dark') {
+                  document.documentElement.classList.add('dark');
+                } else {
+                  document.documentElement.classList.remove('dark');
+                }
+              } catch (_) {}
+            `,
+          }}
+        />
         <StructuredData />
       </head>
-      <body className="bg-slate-950 text-slate-100 font-sans min-h-screen antialiased selection:bg-amber-500/30 selection:text-amber-300">
+      <body className="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 font-sans min-h-screen antialiased selection:bg-amber-500/30 selection:text-amber-300">
         <LanguageProvider>{children}</LanguageProvider>
       </body>
     </html>

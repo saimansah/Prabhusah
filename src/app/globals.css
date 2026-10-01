@@ -41,6 +41,7 @@ html:not(.dark) .bg-slate-950\/95,
 html:not(.dark) .bg-slate-950\/90,
 html:not(.dark) .bg-slate-950\/85,
 html:not(.dark) .bg-slate-950\/80,
+html:not(.dark) .bg-slate-950\/70,
 html:not(.dark) .bg-slate-950\/60 {
   background-color: rgba(241, 245, 249, 0.95);
 }
@@ -54,7 +55,21 @@ html:not(.dark) .bg-slate-900\/70 {
   color: #0f172a;
 }
 
+html:not(.dark) .bg-slate-800,
+html:not(.dark) .bg-slate-800\/90,
+html:not(.dark) .bg-slate-800\/80,
+html:not(.dark) .bg-slate-800\/60,
+html:not(.dark) .bg-slate-800\/50,
+html:not(.dark) .bg-slate-800\/40 {
+  background-color: rgba(241, 245, 249, 0.9);
+  color: #0f172a;
+}
+
 html:not(.dark) .text-white {
+  color: #0f172a !important;
+}
+
+html:not(.dark) .text-slate-100 {
   color: #0f172a !important;
 }
 
@@ -70,11 +85,29 @@ html:not(.dark) .text-slate-400 {
   color: #475569 !important;
 }
 
+/* Maintain crisp white text on colored accent elements & badges */
+html:not(.dark) [class*="bg-red-"] .text-white,
+html:not(.dark) [class*="bg-blue-"] .text-white,
+html:not(.dark) [class*="bg-pink-"] .text-white,
+html:not(.dark) [class*="bg-emerald-"] .text-white,
+html:not(.dark) [class*="from-crimson"] .text-white,
+html:not(.dark) [class*="from-rose"] .text-white,
+html:not(.dark) .text-white-force {
+  color: #ffffff !important;
+}
+
 html:not(.dark) .border-slate-800,
 html:not(.dark) .border-slate-800\/80,
 html:not(.dark) .border-slate-700,
-html:not(.dark) .border-slate-700\/80 {
+html:not(.dark) .border-slate-700\/80,
+html:not(.dark) .border-white\/10,
+html:not(.dark) .border-white\/5 {
   border-color: rgba(226, 232, 240, 0.9) !important;
+}
+
+html:not(.dark) option {
+  background-color: #ffffff;
+  color: #0f172a;
 }
 
 /* Custom Scrollbar */
@@ -92,6 +125,22 @@ html:not(.dark) .border-slate-700\/80 {
 }
 
 ::-webkit-scrollbar-thumb:hover {
+  background: #f59e0b;
+}
+
+html:not(.dark)::-webkit-scrollbar-track,
+html:not(.dark) ::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+html:not(.dark)::-webkit-scrollbar-thumb,
+html:not(.dark) ::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+html:not(.dark)::-webkit-scrollbar-thumb:hover,
+html:not(.dark) ::-webkit-scrollbar-thumb:hover {
   background: #f59e0b;
 }
 

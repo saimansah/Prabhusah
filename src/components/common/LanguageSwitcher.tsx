@@ -51,7 +51,7 @@ export const LanguageSwitcher: React.FC<{ showThemeToggle?: boolean }> = ({
           {theme === "dark" ? (
             <Sun className="w-4 h-4 text-amber-400" />
           ) : (
-            <Moon className="w-4 h-4 text-slate-300" />
+            <Moon className="w-4 h-4 text-slate-700 dark:text-slate-300" />
           )}
         </button>
       )}
