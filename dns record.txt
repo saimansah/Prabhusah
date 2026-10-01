@@ -1,0 +1,17 @@
+;; DNS Configuration for prabhu-sah.com.np (Vercel / Cloudflare)
+$ORIGIN prabhu-sah.com.np.
+$TTL 3600
+
+;; Option A: Standard Vercel Records (Any DNS Provider / Mercantile Nepal .np Registry)
+;; Apex domain A Record
+@       IN  A       76.76.21.21
+
+;; Subdomain CNAME
+www     IN  CNAME   cname.vercel-dns.com.
+
+;; Option B: Cloudflare (with CNAME flattening enabled on Apex)
+@       IN  CNAME   cname.vercel-dns.com.
+www     IN  CNAME   cname.vercel-dns.com.
+
+;; Verification: If Vercel gives you a specific verification code:
+;; _vercel  IN  TXT  "vc-domain-verify=prabhu-sah.com.np,..."

@@ -120,7 +120,7 @@ export const Footer: React.FC = () => {
             <ul className="space-y-2 text-xs sm:text-sm">
               <li>
                 <a
-                  href="#grievance"
+                  href="/#grievance"
                   className="hover:text-amber-400 transition-colors flex items-center gap-2"
                 >
                   <ShieldCheck className="w-4 h-4 text-emerald-400" />
@@ -129,7 +129,7 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <a
-                  href="#development"
+                  href="/#development"
                   className="hover:text-amber-400 transition-colors flex items-center gap-2"
                 >
                   <FileText className="w-4 h-4 text-saffron-400" />

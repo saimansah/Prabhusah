@@ -23,11 +23,11 @@ export const Navbar: React.FC = () => {
   }, []);
 
   const navLinks = [
-    { href: "#about", label: t("navAbout") },
-    { href: "#development", label: t("navDevelopment") },
-    { href: "#news", label: t("navNews") },
-    { href: "#social", label: t("navSocial") },
-    { href: "#grievance", label: t("navGrievance") },
+    { href: "/#about", label: t("navAbout") },
+    { href: "/#development", label: t("navDevelopment") },
+    { href: "/#news", label: t("navNews") },
+    { href: "/#social", label: t("navSocial") },
+    { href: "/#grievance", label: t("navGrievance") },
   ];
 
   return (
@@ -93,7 +93,7 @@ export const Navbar: React.FC = () => {
         <div className="hidden sm:flex items-center gap-3">
           <LanguageSwitcher />
 
-          <a href="#grievance">
+          <a href="/#grievance">
             <Button
               variant="primary"
               size="sm"
@@ -144,7 +144,7 @@ export const Navbar: React.FC = () => {
 
             <div className="pt-3 border-t border-slate-800/80 flex flex-col gap-3">
               <a
-                href="#grievance"
+                href="/#grievance"
                 onClick={() => setMobileMenuOpen(false)}
                 className="w-full"
               >

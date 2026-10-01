@@ -37,11 +37,11 @@ export const translations: Translations = {
   // Hero Counter Stats
   statMandatesNum: { en: "4x", ne: "४ पटक" },
   statMandatesLabel: { en: "Consecutive Parliamentary Mandates (2008, 2013, 2017, 2022)", ne: "लगातार संसदीय विजय (२०६४, २०७०, २०७४, २०७९)" },
-  statRoadsNum: { en: "100+ km", ne: "१००+ कि.मी." },
+  statRoadsNum: { en: "300+ km", ne: "३००+ कि.मी." },
   statRoadsLabel: { en: "Rural Blacktopped Road Corridors", ne: "कालोपत्रे ग्रामीण सडक तथा आरसीसी पुल" },
-  statPilgrimsNum: { en: "200k+", ne: "२ लाख+" },
+  statPilgrimsNum: { en: "1M+", ne: "१० लाख+" },
   statPilgrimsLabel: { en: "Annual Madhani Mahotsav Pilgrims", ne: "वार्षिक पतौराधाम मधानी तीर्थयात्री" },
-  statFarmersNum: { en: "10,000+", ne: "१०,०००+" },
+  statFarmersNum: { en: "100,000+", ne: "१,००,०००+" },
   statFarmersLabel: { en: "Farmers Powered by 100% Free Irrigation", ne: "निःशुल्क कृषि सिँचाइबाट लाभान्वित किसान" },
 
   // Political Journey Section
@@ -138,7 +138,35 @@ export const translations: Translations = {
   footerQuickLinks: { en: "Quick Navigation", ne: "महत्वपूर्ण लिङ्कहरू" },
   footerPolicyDocs: { en: "Party Charter & Ideology (PDF)", ne: "पार्टीको घोषणापत्र तथा विधान" },
   footerAllRights: { en: "All Rights Reserved. Official Digital Desk of Prabhu Sah.", ne: "सर्वाधिकार सुरक्षित। प्रभु साह आधिकारिक डिजिटल डेस्क।" },
-  electionSymbolBadge: { en: "Election Symbol: Mobile Phone (मोबाइल फोन)", ne: "चुनाव चिन्ह: मोबाइल फोन" }
+  electionSymbolBadge: { en: "Election Symbol: Mobile Phone (मोबाइल फोन)", ne: "चुनाव चिन्ह: मोबाइल फोन" },
+
+  // 404 Page (Error Page)
+  notFoundBadge: { en: "Error 404 • Page Not Found", ne: "त्रुटि ४०४ • पृष्ठ फेला परेन" },
+  notFoundHeading: { en: "Lost in the Portal? This Page Doesn't Exist.", ne: "बाटो बिराउनुभयो? खोजिएको पृष्ठ फेला परेन।" },
+  notFoundDesc: {
+    en: "The page or link you requested might have been moved, renamed, or is temporarily unavailable during portal updates. Use the verified navigation below to explore Hon. Prabhu Sah's initiatives, development track record, or submit a citizen grievance directly.",
+    ne: "तपाईंले अनुरोध गर्नुभएको पृष्ठ सारिएको, हटाइएको वा हाल उपलब्ध नभएको हुन सक्छ। मुख्य पृष्ठमा फर्कन, विकास कार्यहरू हेर्न वा जनता सुनुवाइ मार्फत सिधै समस्या दर्ता गर्न तलका आधिकारिक लिङ्कहरू प्रयोग गर्नुहोस्।"
+  },
+  notFoundBackHome: { en: "Return to Home", ne: "मुख्य पृष्ठमा फर्कनुहोस्" },
+  notFoundGoBack: { en: "Previous Page", ne: "अघिल्लो पृष्ठ" },
+  notFoundDirectHelp: { en: "Secretariat Citizen Desk", ne: "सचिवालय प्रत्यक्ष नागरिक डेस्क" },
+  notFoundDirectHelpDesc: {
+    en: "If you need immediate assistance or are reporting a public issue, connect directly with Hon. Prabhu Sah's personal secretariat.",
+    ne: "यदि तपाईं कुनै अत्यावश्यक जनसरोकार, सिँचाइ समस्या वा गुनासो दर्ता गर्न खोज्दै हुनुहुन्थ्यो भने माननीय प्रभु साहको व्यक्तिगत सचिवालयमा सिधै सम्पर्क गर्न सक्नुहुन्छ।"
+  },
+  notFoundQuickNavTitle: { en: "Official Direct Navigation", ne: "महत्वपूर्ण आधिकारिक खण्डहरू" },
+  notFoundNavHomeTitle: { en: "Official Portal Home", ne: "आधिकारिक मुख्य पोर्टल" },
+  notFoundNavHomeDesc: { en: "Overview of political vision, leadership profile & latest updates", ne: "राजनीतिक दृष्टिकोण, नेतृत्व परिचय तथा प्रमुख विवरणहरू" },
+  notFoundNavGrievanceTitle: { en: "Janata Sunwai Portal", ne: "जनता सुनुवाइ कक्ष" },
+  notFoundNavGrievanceDesc: { en: "Submit constituency grievances, local problems & track tickets", ne: "नागरिक समस्या, स्थानीय आवश्यकता तथा गुनासो दर्ता प्रणाली" },
+  notFoundNavDevTitle: { en: "Development Track Record", ne: "ऐतिहासिक विकास निर्माण" },
+  notFoundNavDevDesc: { en: "100% Free Irrigation, 300+ km rural roads & Dalit housing", ne: "शतप्रतिशत निःशुल्क सिँचाइ, पक्की सडक तथा नमुना दलित आवास" },
+  notFoundNavJourneyTitle: { en: "Political Journey & Mandates", ne: "संसदीय तथा राजनीतिक यात्रा" },
+  notFoundNavJourneyDesc: { en: "4 consecutive parliamentary mandates and executive governance", ne: "लगातार ४ पटकको संसदीय विजय र संविधान निर्माणको इतिहास" },
+  notFoundNavNewsTitle: { en: "News, Speeches & Media", ne: "समाचार तथा संसदीय सम्बोधन" },
+  notFoundNavNewsDesc: { en: "Parliamentary addresses, anti-corruption stances & press statements", ne: "संसदको आवाज, भ्रष्टाचारविरोधी अडान र आधिकारिक वक्तव्य" },
+  notFoundNavSocialTitle: { en: "Verified Social Channels", ne: "आधिकारिक सामाजिक सञ्जाल" },
+  notFoundNavSocialDesc: { en: "Live feeds on YouTube, Facebook, and TikTok", ne: "युट्युब, फेसबुक र टिकटकमा प्रत्यक्ष संवाद" }
 };
 
 interface LanguageContextType {
