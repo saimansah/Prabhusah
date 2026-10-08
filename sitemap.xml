@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://prabhu-sah.com.np</loc>
-<xhtml:link rel="alternate" hreflang="en" href="https://prabhu-sah.com.np?lang=EN" />
-<xhtml:link rel="alternate" hreflang="ne" href="https://prabhu-sah.com.np?lang=NE" />
-<lastmod>2026-10-01T14:43:54.071Z</lastmod>
+<loc>https://www.prabhu-sah.com.np</loc>
+<lastmod>2026-10-08T17:20:30.321Z</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
