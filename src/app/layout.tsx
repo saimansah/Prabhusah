@@ -18,7 +18,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://prabhu-sah.com.np"),
+  metadataBase: new URL("https://www.prabhu-sah.com.np"),
   title: {
     default: "Prabhu Sah | Official Portal | Chairman, Aam Janata Party (AJP)",
     template: "%s | Hon. Prabhu Sah Official Portal",
@@ -46,11 +46,7 @@ export const metadata: Metadata = {
   creator: "Hon. Prabhu Sah Secretariat",
   publisher: "Aam Janata Party (AJP)",
   alternates: {
-    canonical: "https://prabhu-sah.com.np",
-    languages: {
-      "ne-NP": "https://prabhu-sah.com.np?lang=NE",
-      "en-US": "https://prabhu-sah.com.np?lang=EN",
-    },
+    canonical: "https://www.prabhu-sah.com.np",
   },
   robots: {
     index: true,
@@ -70,7 +66,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://prabhu-sah.com.np",
+    url: "https://www.prabhu-sah.com.np",
     siteName: "Hon. Prabhu Sah Official Portal",
     title: "Hon. Prabhu Sah | Official Political & Citizen Portal",
     description:

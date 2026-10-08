@@ -187,9 +187,16 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
 
   useEffect(() => {
     setMounted(true);
-    const savedLang = localStorage.getItem("prabhu_sah_lang") as Language;
-    if (savedLang === "EN" || savedLang === "NE") {
-      setLanguage(savedLang);
+    const urlParams = new URLSearchParams(window.location.search);
+    const langParam = urlParams.get("lang")?.toUpperCase();
+    if (langParam === "EN" || langParam === "NE") {
+      setLanguage(langParam as Language);
+      localStorage.setItem("prabhu_sah_lang", langParam);
+    } else {
+      const savedLang = localStorage.getItem("prabhu_sah_lang") as Language;
+      if (savedLang === "EN" || savedLang === "NE") {
+        setLanguage(savedLang);
+      }
     }
 
     const savedTheme = localStorage.getItem("prabhu_sah_theme") as Theme;
